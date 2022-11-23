@@ -1,0 +1,345 @@
+{
+  "Databases" : [ {
+    "Name" : "DB",
+    "Schemas" : [ {
+      "Name" : "SCH",
+      "Tables" : [ {
+        "Name" : "siphash_ids",
+        "Columns" : [ {
+          "Name" : "name",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "stream",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "arson_keys",
+        "Columns" : [ {
+          "Name" : "enabled",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_keystream",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_keystream_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id_digest",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "congestion_control",
+        "Columns" : [ {
+          "Name" : "digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "timestamp",
+          "Type" : "NUMERIC"
+        } ]
+      }, {
+        "Name" : "fire",
+        "Columns" : [ {
+          "Name" : "name",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "name_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "stream",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "stream_digest",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "log",
+        "Columns" : [ {
+          "Name" : "event",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "timestamp",
+          "Type" : "NUMERIC"
+        } ]
+      }, {
+        "Name" : "neighbors",
+        "Columns" : [ {
+          "Name" : "bytes_read",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "bytes_written",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "echo_queue_size",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "ip_version",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "last_error",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "local_ip_address",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "local_ip_address_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "local_port",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "local_port_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "non_tls",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "passthrough",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "proxy_ip_address",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "proxy_port",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "proxy_type",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_certificate",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_ip_address",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_ip_address_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_port",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_port_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "remote_scope_id",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "session_cipher",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "status",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "status_control",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "transport",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "transport_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "uptime",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "user_defined_digest",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "outbound_queue",
+        "Columns" : [ {
+          "Name" : "attempts",
+          "Type" : "INT"
+        }, {
+          "Name" : "message",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_identity_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "neighbor_oid",
+          "Type" : "INT"
+        }, {
+          "Name" : "timestamp",
+          "Type" : "INT"
+        } ]
+      }, {
+        "Name" : "participants",
+        "Columns" : [ {
+          "Name" : "encryption_public_key",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "encryption_public_key_algorithm",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "encryption_public_key_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "encryption_public_key_signed",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "identity",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "keystream",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "last_status_timestamp",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "options",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "signature_public_key",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "signature_public_key_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "signature_public_key_signed",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "special_value_a",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "special_value_b",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "special_value_c",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "special_value_d",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "special_value_e",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "participants_keys",
+        "Columns" : [ {
+          "Name" : "keystream",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "keystream_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "timestamp",
+          "Type" : "NUMERIC"
+        } ]
+      }, {
+        "Name" : "participants_messages",
+        "Columns" : [ {
+          "Name" : "attachment",
+          "Type" : "BLOB"
+        }, {
+          "Name" : "from_smokestack",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_identity_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_read",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "message_sent",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "siphash_id_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "timestamp",
+          "Type" : "INT"
+        } ]
+      }, {
+        "Name" : "settings",
+        "Columns" : [ {
+          "Name" : "name",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "name_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "value",
+          "Type" : "TEXT"
+        } ]
+      }, {
+        "Name" : "steam_files",
+        "Columns" : [ {
+          "Name" : "absolute_filename",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "destination",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "display_filename",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "ephemeral_private_key",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "ephemeral_public_key",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "file_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "file_identity",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "file_identity_digest",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "file_size",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "is_download",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "is_locked",
+          "Type" : "INT"
+        }, {
+          "Name" : "key_type",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "keystream",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "read_interval",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "read_offset",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "someoid",
+          "Type" : "INT"
+        }, {
+          "Name" : "status",
+          "Type" : "TEXT"
+        }, {
+          "Name" : "transfer_rate",
+          "Type" : "TEXT"
+        } ]
+      } ]
+    } ]
+  } ]
+}
