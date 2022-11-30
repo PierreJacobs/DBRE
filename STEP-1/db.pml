@@ -81,10 +81,6 @@ physical schemas {
 				neighbor_oid,
 				timestamp
 			}
-			
-			references {
-				a: neighbor_oid -> neighbors.oid
-			}
 		}
 
 		table participants {
