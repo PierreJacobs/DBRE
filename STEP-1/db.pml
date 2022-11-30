@@ -1,4 +1,6 @@
 physical schemas {
+
+	// Schéma enrichi avec les autres clefs étrangères
 	
 	relational schema smokeDB : SCH {
 		
