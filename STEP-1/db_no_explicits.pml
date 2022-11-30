@@ -12,10 +12,6 @@ physical schemas {
 				siphash_id_digest
 			}
 			
-			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
-			}
-			
 		}
 		
 		table congestion_control {
@@ -106,10 +102,6 @@ physical schemas {
 				special_value_e
 			}
 			
-			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
-			}
-			
 		}
 
 		table participants_keys {
@@ -119,10 +111,6 @@ physical schemas {
 				keystream_digest,
 				siphash_id_digest,
 				timestamp
-			}
-			
-			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
 		}
 		
@@ -138,10 +126,6 @@ physical schemas {
 				message_sent,
 				siphash_id_digest,
 				timestamp
-			}
-			
-			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
 		}
 

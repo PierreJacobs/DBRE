@@ -13,9 +13,8 @@ physical schemas {
 			}
 			
 			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
+				has: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
-			
 		}
 		
 		table congestion_control {
@@ -81,6 +80,10 @@ physical schemas {
 				neighbor_oid,
 				timestamp
 			}
+
+			references {
+				queued_neighbor: neighbor_oid -> neighbors.oid
+			}
 		}
 
 		table participants {
@@ -105,9 +108,9 @@ physical schemas {
 				special_value_d,
 				special_value_e
 			}
-			
+
 			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
+				has: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
 			
 		}
@@ -120,9 +123,9 @@ physical schemas {
 				siphash_id_digest,
 				timestamp
 			}
-			
+
 			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
+				has: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
 		}
 		
@@ -139,9 +142,9 @@ physical schemas {
 				siphash_id_digest,
 				timestamp
 			}
-			
+
 			references {
-				a: siphash_id_digest -> siphash_ids.siphash_id_digest
+				has: siphash_id_digest -> siphash_ids.siphash_id_digest
 			}
 		}
 
