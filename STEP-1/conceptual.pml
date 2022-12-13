@@ -24,6 +24,10 @@ conceptual schema smokeDB {
         }
     }
 
+    relationship type participantSipHashId {
+        participant[1] : Participant,
+        siphash[1] : Siphashid, 
+    }
 
 
 
