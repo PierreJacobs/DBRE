@@ -32,10 +32,10 @@ relational schema enrichedSmokeDB : SCH {
             echo_queue_size,
             ip_version,
             last_error,
-            local_ip_address,
+            local_ip_address, //undetected by SQLInspect, used in writeNeighbor
             local_ip_address_digest,
             local_port,
-            local_port_digest,
+            local_port_digest, //undetected by SQLInspect, used in writeNeighbor
             non_tls,
             passthrough,
             proxy_ip_address,
@@ -43,19 +43,20 @@ relational schema enrichedSmokeDB : SCH {
             proxy_type,
             remote_certificate,
             remote_ip_address,
-            remote_ip_address_digest,
+            remote_ip_address_digest, //undetected by SQLInspect, used in writeNeighbor
             remote_port,
-            remote_port_digest,
-            remote_scope_id,
+            remote_port_digest, //undetected by SQLInspect, used in writeNeighbor
+            remote_scope_id, 
             session_cipher,
             status,
             status_control,
             transport,
-            transport_digest,
+            transport_digest, //undetected by SQLInspect, used in writeNeighbor
             uptime,
-            user_defined_digest
+            user_defined_digest //undetected by SQLInspect, used in writeNeighbor
         }
     }
+    //done
     
     table outbound_queue {
         columns {
