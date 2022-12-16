@@ -173,3 +173,13 @@ relational schema enrichedSmokeDB : SCH {
     }
     
 }
+
+databases {
+	
+	sqlite SCH {
+		dbname : "smokeDB"
+		host: "localhost"
+		port: 6969
+	}
+	
+}
