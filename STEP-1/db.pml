@@ -252,7 +252,9 @@ physical schemas {
 		table fire {
 			columns {
 				name,
-				name_digest
+				name_digest,
+				stream,
+				stream_digest
 			}
 		}
 		
@@ -445,7 +447,9 @@ physical schemas {
 		table fire {
 			columns {
 				name,
-				name_digest
+				name_digest,
+				stream,
+				stream_digest
 			}
 		}
 		
