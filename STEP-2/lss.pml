@@ -3,9 +3,10 @@ relational schema enrichedSmokeDB : SCH {
     table congestion_control {
         columns {
             digest,
-            timestamp
+            timestamp //used to delete congestion_control, SQLInspect doesn't detect its use
         }
     }
+    //done
     
     table fire {
         columns {
