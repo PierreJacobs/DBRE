@@ -1,18 +1,5 @@
 relational schema enrichedSmokeDB : SCH {
     
-    table arson_keys {
-        columns {
-            enabled,
-            message_keystream,
-            message_keystream_digest,
-            siphash_id_digest
-        }
-        
-        references {
-            has: siphash_id_digest -> siphash_ids.siphash_id_digest
-        }
-    }
-    
     table congestion_control {
         columns {
             digest,
