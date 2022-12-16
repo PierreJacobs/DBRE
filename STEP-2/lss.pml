@@ -11,7 +11,9 @@ relational schema enrichedSmokeDB : SCH {
     table fire {
         columns {
             name,
-            name_digest
+            name_digest,
+            stream,
+            stream_digest
         }
     }
     
