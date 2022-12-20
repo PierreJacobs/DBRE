@@ -72,6 +72,7 @@ relational schema enrichedSmokeDB : SCH {
             queued_neighbor: neighbor_oid -> neighbors.oid
         }
     }
+    //done, all attributes were detected by SQLInspect
 
     table participants {
         columns {
