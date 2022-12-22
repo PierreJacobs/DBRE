@@ -1,5 +1,5 @@
 sep=,
-name,methodCallCount,type,table
+Nom de la méthode,Nombre d'appels,Type de requêtes,Table
 readSetting,63,SELECT,settings
 cleanDanglingOutboundQueued,3,DELETE,outbound_queue
 cleanDanglingParticipants,2,DELETE,participants
