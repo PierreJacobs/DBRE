@@ -1,3 +1,4 @@
+sep=,
 name,methodCallCount,type,table
 readSetting,63,SELECT,settings
 cleanDanglingOutboundQueued,3,DELETE,outbound_queue
