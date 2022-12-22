@@ -1,0 +1,14 @@
+sep=,
+Table,Nombre
+arson_keys,4
+congestion_control,25
+fire,8
+log,20
+neighbors,24
+outbound_queue,15
+participants,135
+participants_keys,11
+participants_messages,25
+settings,160
+siphash_ids,46
+steam_files,60
