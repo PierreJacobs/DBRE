@@ -1,0 +1,13 @@
+Table;Nombre de requêtes
+arson_keys;6
+congestion_control;27
+fire;10
+log;22
+neighbors;26
+outbound_queue;17
+participants;137
+participants_keys;13
+participants_messages;27
+settings;162
+siphash_ids;48
+steam_files;62
