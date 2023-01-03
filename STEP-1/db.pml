@@ -199,7 +199,7 @@ physical schemas {
 		}
 
 		relationship type participantSipHashId {
-			participant[1] : participants,
+			participant[0-1] : participants,
 			siphash[1] : siphash_ids, 
 		}
 
