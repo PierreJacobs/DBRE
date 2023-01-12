@@ -219,8 +219,8 @@ physical schemas {
 		}
 
 		relationship type NeighborQueue {
-			neighbor[1] : neighbors,
-			queue[1] : outbound_queue,
+			queued[1] : outbound_queue,
+			neighbor[0-N] : neighbors,
 		}
 
 	}
