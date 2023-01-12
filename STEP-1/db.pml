@@ -199,23 +199,23 @@ physical schemas {
 		}
 
 		relationship type participantSipHashId {
-			participant[0-1] : participants,
-			siphash[1] : siphash_ids, 
+			participant[1] : participants,
+			siphash[0-1] : siphash_ids, 
 		}
 
 		relationship type messageSipHashId {
-			message[0-N] : participants_messages,
-			siphash[1] : siphash_ids, 
+			message[1] : participants_messages,
+			siphash[0-N] : siphash_ids, 
 		}
 
 		relationship type keySipHashId {
-			pkey[0-N] : participants_keys,
-			siphash[1] : siphash_ids, 
+			pkey[1] : participants_keys,
+			siphash[0-N] : siphash_ids, 
 		}
 
 		relationship type arson_keySipHashId {
-			akey[0-N] : arson_keys,
-			siphash[1] : siphash_ids, 
+			akey[1] : arson_keys,
+			siphash[0-N] : siphash_ids, 
 		}
 
 		relationship type NeighborQueue {
