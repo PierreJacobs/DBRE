@@ -115,6 +115,8 @@ physical schemas {
 			special_value_d : string,
 			special_value_e : string
 			
+			// L'identifiant devrait être retiré et remplacé par un type d'association car 
+			// il est aussi un clef étrangère
 			identifier {
 				siphash_id_digest
 			}
