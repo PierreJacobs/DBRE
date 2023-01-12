@@ -11,7 +11,8 @@ physical schemas {
 			siphash_id_digest : string,
 			
 			identifier {
-				message_keystream_digest
+				message_keystream_digest,
+				// siphash_id_digest: Devrait être remplacé par le rôle qui traduit cette clef étrangère
 				siphash_id_digest
 			}
 		}
@@ -92,7 +93,8 @@ physical schemas {
 			timestamp : int,
 			
 			identifier {
-				messages
+				messages,
+				// neighbor_oid: Devrait être remplacé par le rôle qui traduit cette clef étrangère
 				neighbor_oid
 			}
 		}
@@ -150,7 +152,8 @@ physical schemas {
 			timestamp : int
 			
 			identifier {
-				siphash_id_digest
+				// siphash_id_digest: Devrait être remplacé par le rôle qui traduit cette clef étrangère
+				siphash_id_digest,
 				message_digest
 			}
 		}
