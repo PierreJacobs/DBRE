@@ -470,7 +470,6 @@ physical schemas {
 		
 		table neighbors {
 			columns {
-				oid,
 				bytes_read,
 				bytes_written,
 				echo_queue_size,
@@ -503,7 +502,6 @@ physical schemas {
 		
 		table outbound_queue {
 			columns {
-				oid,
 				attempts,
 				messages,
 				message_identity_digest,
@@ -514,7 +512,6 @@ physical schemas {
 
 		table participants {
 			columns {
-				oid,
 				encryption_public_key,
           		encryption_public_key_algorithm,
           		encryption_public_key_digest,
@@ -543,7 +540,6 @@ physical schemas {
 
 		table participants_keys {
 			columns {
-				oid,
 				keystream,
 				keystream_digest,
 				siphash_id_digest,
@@ -557,7 +553,6 @@ physical schemas {
 		
 		table participants_messages {
 			columns {
-				oid,
 				attachment,
 				from_smokestack,
 				message,
@@ -584,7 +579,6 @@ physical schemas {
 		
 		table siphash_ids {
 			columns {
-				oid,
 				name,
 				siphash_id,
 				siphash_id_digest,
@@ -594,7 +588,6 @@ physical schemas {
 		
 		table steam_files {
 			columns {
-				oid,
 				absolute_filename,
 				destination,
 				display_filename,
