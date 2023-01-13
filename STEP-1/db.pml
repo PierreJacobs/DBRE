@@ -79,7 +79,7 @@ physical schemas {
 				remote_port_digest,
 				transport_digest,
 				// oid en identifiant: car la table outbound_queue référence cet attribut
-				// Il est donc conseillé de mettre le mettre comme identifiant (secondaire)
+				// Il est donc conseillé de le mettre comme identifiant (secondaire)
 				oid
 			}
 		}
